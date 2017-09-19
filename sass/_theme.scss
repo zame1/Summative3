@@ -1,22 +1,7 @@
-// Import custom font from Google
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+// Import custom fonts from Google
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 
-// Override / set color variables
-$dark-blue:         #004C70;
-$light-blue:        #0093D1;
-$red:               #F2635F;
-$yellow:            #F4D00C;
-$orange:            #E0A025;
-
-// Set brand colors
-$brand-primary:     $dark-blue;
-$brand-success:     $light-blue;
-$brand-info:        $yellow;
-$brand-warning:     $orange;
-$brand-danger:      $red;
-
-// Override fonts
-$font-family-sans-serif:  'Raleway', sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:   Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+// Override Bootstrap's font styling
+$font-family-sans-serif:  'Lato', sans-serif;
+$font-family-base:        $font-family-sans-serif;
+$headings-font-weight:    700;

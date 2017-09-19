@@ -1,7 +1,8 @@
 @import 'theme';
 @import 'bootstrap/bootstrap';
 
-// your styles here
+// your styles here (note that you can use Bootstrap variables from _variables.scss in here too)
 .example {
-  background-color: $brand-primary;
+  color: red;
+  background-color: $purple;
 }
