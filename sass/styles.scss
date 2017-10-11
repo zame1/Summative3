@@ -1,8 +1,410 @@
 @import 'theme';
 @import 'bootstrap/bootstrap';
 
+
 // your styles here (note that you can use Bootstrap variables from _variables.scss in here too)
 .example {
   color: red;
-  background-color: $purple;
+  background-color: #C9283E;
+} 
+
+.section-heading{
+	color:#C9283E;
+}
+
+header{
+	height: 100vh;
+	background-color: #f8f8f8;
+} 
+
+.hero-container{
+	height:65vh;
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.head-title h1{
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.33);
+	z-index: 25;
+}
+
+.head-title p{
+	color: #fff;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	z-index: 25;
+	margin-top:2em;
+	letter-spacing: 1px;
+}
+
+.headpic{
+	background-image: url(../img/leica.jpg);
+	height:100vh;
+	width:50vw;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	z-index: 20;
+	clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+	filter:brightness(75%);
+} 
+
+
+.left{
+	background-image: url(../img/left.jpg);
+	height:95vh;
+	width:50vw;
+	background-size: cover;	
+	position: relative;
+	z-index: 2;
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+
+}
+
+.right{
+	/*background-image: url(http://andrejosselin.de/file/andrejosselin_bts-6-1.jpg);*/
+	background-image: url(../img/right.jpg);
+	height:95vh;
+	width:50vw;
+	background-size: cover;
+	background-position: 50%;
+	position: relative;
+	z-index: 2;
+	clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+}
+
+.blur-pic{
+	filter: brightness(30%), grayscale(100%);
+} 
+
+.section-heading{
+	margin-top:1em;
+	margin-bottom:1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+	background-color: #f8f8f8;
+}
+
+.about-pic{
+	background-image: url(http://andrejosselin.de/file/andrejosselin_bts-3-1.jpg);
+	min-height:300px;
+	max-width: 300px;
+	background-size: cover;
+	margin:1em 1em 5em 1em;
+	border-radius: 50%;
+	border:solid 4px #C9283E;
+}
+
+.extra-box{
+	max-width: 404px;
+	max-height: 250px;
+	overflow: hidden;
+	margin:1em;	
+	border-radius: 5px;
+
+}
+
+.extra-box p{
+	opacity: 0;
+}
+
+.extra-box:hover p{
+	opacity: 1;
+	transition: all 1.1s;
+	transition-timing-function: ease-in;
+	position: absolute;
+	bottom: 10%;	
+}
+
+.portfolio-item img{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition: all 1s ;
+	width:100%;
+	max-width: 424px;
+	height:auto;
+	overflow: hidden;
+	transition-timing-function: ease-in;
+}
+
+.portfolio-item img:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	max-width: 400px;
+	transform: scale(1.2);
+	transition-timing-function: ease-in;
+	transition: all 1s ;
+	-webkit-filter: brightness(50%) blur(3px);
+	filter: brightness(50%) blur(3px);
+
+
+} 
+
+.proj-name {
+	position: absolute;
+	top:35%;
+	left:0%;
+    text-align:center;
+    width: 80%;
+	z-index: 5;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	margin: 0 0 0 1.5em;
+	font-size:28px;
+}
+
+.proj-stats{
+	display: flex-row;
+	justify-content: space-between;
+	flex: 0 0 100%;
+	width: 80%;
+}
+
+.proj-stats p{
+	display: inline-flex;
+	position: absolute;
+	bottom:-10%;
+	/*left:0%;*/
+    text-align:center;
+    width: 15%;
+	z-index: 5;
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	font-weight: 700;
+}
+
+.proj-stats p:nth-child(1){
+	left:0;
+	/*margin:auto;*/
+	margin: 0 0 0 3em;
+}
+
+.proj-stats p:nth-child(2){
+	right:0;
+	margin: 0 4em 0 0;
+}
+
+
+#fieldstats{
+	width:100%;
+/*	height:30vw;*/
+	/*display: block;
+	margin:auto;*/
+	/*border: thin gray solid;*/
+	/*width: 100%;*/
+} 
+
+.side-marg{
+	margin:0, 2em, 0, 2em;
+}
+
+.key p{
+	text-align: center;
+	width:100%;
+	text-anchor: middle;
+}
+
+.box1{
+	border-radius: 50%;
+	height:20px;
+	width:20px;
+	background-color: $color1;
+	margin:auto;
+} 
+.box2{
+	border-radius: 50%;
+	height:20px;
+	width:20px;
+	background-color: $color2;
+	margin:auto;
+} 
+.box3{
+	border-radius: 50%;
+	height:20px;
+	width:20px;
+	background-color: $color3;
+	margin:auto;
+} 
+.box4{
+	border-radius: 50%;
+	height:20px;
+	width:20px;
+	background-color: $color4;
+	margin:auto;
+} 
+
+.graphs p{
+	/*margin: 1em, 0,0,-1em;*/
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/*text-anchor: middle;*/
+} 
+
+
+/* NEW GRAPHS SECTIONS STYLES*/ 
+
+.side-block{
+	max-height:55vh;
+	background-color: $color5;
+	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	position: relative;
+	z-index: 2;
+	transform: scale(2,1);
+} 
+
+.side-block2{
+	max-height:55vh;
+	background-color: $color6;
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+	position: relative;
+	z-index: 2;
+	transform: scale(2,1);
+} 
+
+.side-block3{
+	max-height:55vh;
+	background-color: $color5;
+	clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+	position: relative;
+	z-index: 2;
+	transform: scale(2,1);
+} 
+
+.side-block4{
+	max-height:55vh;
+	background-color: $color6;
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+	position: relative;
+	z-index: 2;
+	transform: scale(2,1);
+} 
+
+.sb-child{
+	transform: scale(0.5,1);
+}
+
+.sb-title {
+	margin:1.5em 0 0 0;
+	text-transform: uppercase;
+	color:#fff;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+}
+
+/*.bar-graph{
+	margin-bottom:5em;
+}*/
+
+.lorem-txt p{
+	color:#fff;
+	margin-top:3em;
+	width:100%;
+}
+
+.pic-block{
+	background-image: url(http://andrejosselin.de/file/I2A3549.jpg);
+	background-size: cover;
+	background-position-y:50%;
+	max-height:55vh;
+	position: relative;
+	z-index:1;
+	display: inline-block;
+} 
+
+.pic-block2{
+	background-image: url(http://andrejosselin.de/file/formula1_andrejosselin-9.jpg);
+	background-size: cover;
+	background-position-y: 90%;
+	max-height:55vh;
+	position: relative;
+	z-index:1;
+	display: inline-block;
+}
+
+.pic-block3{
+	background-image: url(http://andrejosselin.de/file/andrejosselin_visitportugal-6.jpg);
+	background-size: cover;
+	/*background-position-y: 10%;*/
+	max-height:55vh;
+	position: relative;
+	z-index:1;
+	display: inline-block;
+}
+
+.pic-block4{
+	background-image: url(http://andrejosselin.de/file/andrejosselin_desi_california_airbnb-21.jpg);
+	background-size: cover;
+	background-position-y: 90%;
+	max-height:55vh;
+	position: relative;
+	z-index:1;
+	display: inline-block;
+}
+
+/*----MODULE--------*/
+.modal-content{
+	width:100%;
+}
+.modal-body h2{
+	text-align: center;
+	text-transform: uppercase;
+	color:$color1;
+}
+
+.item-intro{
+	text-align: center;
+	text-transform: uppercase;
+	color:$color1;
+}
+
+footer{
+	width:100%;
+	height: 8em;
+	background-color:#2E112D;
+}
+
+@media (max-width:576px){
+	
+	.left,.right{
+		display: none;
+	}
+	.headpic{
+		width:100%;
+		clip-path: none;
+	}
+
+	.head-title h1{
+		position: absolute;
+		top:70%;
+		text-align: center;
+		width:100%;
+	}
+
+	.head-title p{
+		width:100%;
+		text-align: center;
+	}
+
+	.lorem-txt{
+		display:none;
+	}
+
 }
