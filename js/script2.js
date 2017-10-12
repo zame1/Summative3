@@ -142,7 +142,7 @@ $(function() {
               .attr('height',0)
               .attr('y',250)
               .transition()
-              .duration(2000)
+              .duration(7500)
               .attr('height', function(d){return yScale(d.value)})
               .attr('y', function(d){return height - yScale(d.value)});
         
@@ -156,7 +156,7 @@ $(function() {
           tooltip.append('rect')
               .attr('width', 160)
               .attr('height', 50)
-              .attr('fill', 'teal');
+              .attr('fill', '#F0433A');
 
           var tooltipText = tooltip.append('text')
               .text('bla')

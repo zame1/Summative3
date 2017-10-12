@@ -101,13 +101,15 @@ header{
 }
 
 .about-pic{
-	background-image: url(http://andrejosselin.de/file/andrejosselin_bts-3-1.jpg);
+	background-image: url(../img/avatar.jpg);
 	min-height:300px;
 	max-width: 300px;
 	background-size: cover;
 	margin:1em 1em 5em 1em;
 	border-radius: 50%;
 	border:solid 4px #C9283E;
+	background-position-x:70%;
+	transform: scaleX(-1)
 }
 
 .extra-box{
@@ -320,7 +322,7 @@ header{
 }
 
 .pic-block{
-	background-image: url(http://andrejosselin.de/file/I2A3549.jpg);
+	background-image: url(../img/city.jpg);
 	background-size: cover;
 	background-position-y:50%;
 	max-height:55vh;
@@ -330,7 +332,7 @@ header{
 } 
 
 .pic-block2{
-	background-image: url(http://andrejosselin.de/file/formula1_andrejosselin-9.jpg);
+	background-image: url(../img/f1.jpg);
 	background-size: cover;
 	background-position-y: 90%;
 	max-height:55vh;
@@ -340,7 +342,7 @@ header{
 }
 
 .pic-block3{
-	background-image: url(http://andrejosselin.de/file/andrejosselin_visitportugal-6.jpg);
+	background-image: url(../img/shoes.jpg);
 	background-size: cover;
 	/*background-position-y: 10%;*/
 	max-height:55vh;
@@ -350,7 +352,7 @@ header{
 }
 
 .pic-block4{
-	background-image: url(http://andrejosselin.de/file/andrejosselin_desi_california_airbnb-21.jpg);
+	background-image: url(../img/girl.jpg);
 	background-size: cover;
 	background-position-y: 90%;
 	max-height:55vh;
