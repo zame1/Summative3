@@ -361,6 +361,10 @@ header{
 	display: inline-block;
 }
 
+.show-mob{
+	display:none;
+}
+
 /*----MODULE--------*/
 .modal-content{
 	width:100%;
@@ -404,9 +408,25 @@ footer{
 		width:100%;
 		text-align: center;
 	}
+	
+	.side-block, .side-block2, .side-block3, .side-block4{
+		max-height:100vh;
+	}
 
-	.lorem-txt{
+	.mob-flex{
+		display: flex;
+		flex-wrap: wrap;
+		flex:0 0 50%;
+	}
+
+	.hide-mob{
 		display:none;
+	}
+	.show-mob{
+		display:block;
+	}
+	.lorem-txt{
+		/*display:none;*/
 	}
 
 }
