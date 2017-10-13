@@ -1,3 +1,4 @@
+// This ENTIRE PAGE IS MY OWN JS CODE
 $(function() {
 
   let key = 'pch85w4ZYY8vTvMKbIuUg9BD1ZJgrkTs'
